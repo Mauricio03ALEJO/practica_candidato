@@ -4,10 +4,6 @@
       <div class="form-content">
         <form @submit.prevent="agregarCandidato">
           <div class="form-group">
-            <label>Fotografía</label>
-          </div>
-          
-          <div class="form-group">
             <label>Título</label>
             <input type="text" v-model="candidato.titulo" readonly />
           </div>
@@ -43,9 +39,12 @@
         </form>
       </div>
       
-      <div class="foto-container">
-        <div class="foto-placeholder" v-if="!candidato.foto"></div>
-        <img v-else :src="candidato.foto" alt="Foto del candidato" />
+      <div>
+        <label>Fotografía</label>
+        <div class="foto-container">
+          <div class="foto-placeholder" v-if="!candidato.foto"></div>
+          <img v-else :src="candidato.foto" alt="Foto del candidato" />
+        </div>
       </div>
     </div>
   </div>
@@ -109,68 +108,35 @@ export default {
 
 <style scoped>
 .candidato-form {
-  padding: 15px;
-  border: 1px solid #333;
+  border: 1px solid blue;
 }
 
 .form-header {
   display: flex;
-  gap: 15px;
-}
-
-.form-content {
-  flex: 1;
 }
 
 .foto-container {
-  width: 150px;
-  height: 150px;
-  flex-shrink: 0;
-  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border: 2px solid blue;
+  margin-left: 10px;
 }
 
 .foto-placeholder {
   width: 100%;
   height: 100%;
-  border: 1px solid #333;
 }
 
 .foto-container img {
   width: 100%;
   height: 100%;
-  border: 1px solid #333;
-  object-fit: cover;
 }
 
-.form-group {
-  margin-bottom: 10px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 3px;
-}
-
-.form-group input {
+input {
   width: 100%;
-  padding: 5px;
-  border: 1px solid #333;
 }
 
 .button-group {
   display: flex;
-  gap: 10px;
-  margin-top: 15px;
 }
-
-.btn-buscar,
-.btn-agregar {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #333;
-  cursor: pointer;
-  background: white;
-}
-
-
 </style>

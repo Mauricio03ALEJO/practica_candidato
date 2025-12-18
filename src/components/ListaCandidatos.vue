@@ -45,30 +45,18 @@ export default {
 
 <style scoped>
 .lista-candidatos {
-  padding: 15px;
-  border: 1px solid #333;
+  border: 1px solid blue;
 }
 
 table {
   width: 100%;
-  border-collapse: collapse;
 }
 
-thead th {
-  padding: 8px;
+th, td {
   text-align: center;
-  border-bottom: 1px solid #333;
 }
 
-tbody td {
-  padding: 8px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
-
-.empty-state {
-  text-align: center;
-  color: #999;
-  padding: 20px;
+th {
+  border-bottom: 1px solid blue;
 }
 </style>
