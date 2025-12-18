@@ -45,16 +45,8 @@ export default {
 
 <style scoped>
 .lista-candidatos {
-  padding: 20px;
-  background: white;
-  border: 3px solid #4169E1;
-  border-radius: 30px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  min-height: 400px;
-}
-
-.tabla-container {
-  overflow-x: auto;
+  padding: 15px;
+  border: 1px solid #333;
 }
 
 table {
@@ -63,51 +55,20 @@ table {
 }
 
 thead th {
-  background: white;
-  color: #4169E1;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 15px 10px;
+  padding: 8px;
   text-align: center;
-  border-bottom: 3px solid #4169E1;
+  border-bottom: 1px solid #333;
 }
 
 tbody td {
-  padding: 15px 10px;
+  padding: 8px;
   text-align: center;
-  border-bottom: 2px solid #4169E1;
-  color: #4169E1;
-  font-size: 16px;
-  font-style: italic;
-}
-
-tbody tr:hover {
-  background: #F0F4FF;
+  border-bottom: 1px solid #ddd;
 }
 
 .empty-state {
   text-align: center;
   color: #999;
-  font-style: italic;
-  padding: 40px 20px;
-}
-
-/* Scrollbar personalizado */
-.tabla-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.tabla-container::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.tabla-container::-webkit-scrollbar-thumb {
-  background: #4169E1;
-  border-radius: 10px;
-}
-
-.tabla-container::-webkit-scrollbar-thumb:hover {
-  background: #2F4F9F;
+  padding: 20px;
 }
 </style>

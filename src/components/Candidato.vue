@@ -109,16 +109,13 @@ export default {
 
 <style scoped>
 .candidato-form {
-  padding: 30px;
-  background: white;
-  border: 3px solid #4169E1;
-  border-radius: 30px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  border: 1px solid #333;
 }
 
 .form-header {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .form-content {
@@ -129,88 +126,51 @@ export default {
   width: 150px;
   height: 150px;
   flex-shrink: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .foto-placeholder {
   width: 100%;
   height: 100%;
-  border: 3px solid #4169E1;
-  border-radius: 20px;
-  background: white;
+  border: 1px solid #333;
 }
 
 .foto-container img {
   width: 100%;
   height: 100%;
-  border: 3px solid #4169E1;
-  border-radius: 20px;
+  border: 1px solid #333;
   object-fit: cover;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form-group label {
   display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #4169E1;
-  font-size: 18px;
+  margin-bottom: 3px;
 }
 
 .form-group input {
   width: 100%;
-  padding: 10px 15px;
-  border: 2px solid #4169E1;
-  border-radius: 8px;
-  font-size: 16px;
-  background: white;
+  padding: 5px;
+  border: 1px solid #333;
 }
 
 .button-group {
   display: flex;
-  gap: 15px;
-  margin-top: 25px;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .btn-buscar,
 .btn-agregar {
   flex: 1;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 8px;
+  border: 1px solid #333;
   cursor: pointer;
-  transition: all 0.3s;
-  color: white;
+  background: white;
 }
 
-.btn-buscar {
-  background-color: #1E90FF;
-}
 
-.btn-buscar:hover {
-  background-color: #1873CC;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
-}
-
-.btn-agregar {
-  background-color: #1E90FF;
-}
-
-.btn-agregar:hover:not(:disabled) {
-  background-color: #1873CC;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
-}
-
-.btn-agregar:disabled {
-  background-color: #A0C4E8;
-  cursor: not-allowed;
-  opacity: 0.6;
-}
 </style>

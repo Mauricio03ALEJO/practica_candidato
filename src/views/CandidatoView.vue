@@ -37,21 +37,19 @@ export default {
 
 <style scoped>
 .candidato-view {
-  padding: 20px;
+  padding: 15px;
   max-width: 900px;
   margin: 0 auto;
 }
 
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 32px;
+  margin-bottom: 15px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 </style>
