@@ -11,7 +11,7 @@
 
 <script>
 import Candidato from '../components/Candidato.vue';
-import ListaCandidatos from '../components/ListaCandidatos.vue';
+import ListaCandidatos from '../components/ListaCandidato.vue';
 
 export default {
   name: 'CandidatoView',
